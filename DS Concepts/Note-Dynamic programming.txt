@@ -1,0 +1,57 @@
+https://www.youtube.com/watch?v=oBt53YbR9Kk&t=8623s
+https://www.youtube.com/watch?v=oBt53YbR9Kk
+
+Dynamic programming
+Part 1: Memoization
+Part 2: Tabulation
+
+Dynamic Programming
+canSum -> Decision Problem
+howSum -> Combination Problem
+bestSum -> Optimization Problem
+
+CanConstruct -> Memorization 
+
+Dunamic programming interview problems:
+1. Have a system to solve every problems
+2. All dynamic programming problems are very similar
+
+How to approach any dynamic proramming problem?
+Ans: FAST mathod. 
+This four step process makes it very easy for you to clearly and consistently think about dynamic programming.
+The five different sample problems that commonly occur in treeviews.
+Fully understanding the FAST method and how to apply it in our examples will prepare you for any dynamic programming problems that you might face in an interview situation.
+
+Recursion: Recursion is the key to understanding dynamic programming. 
+dynamic programming involves breaking problems down into samller subproblems.
+The first step of the FAST method requires you to 
+1. find a recusive solution to the problem 
+
+What is dynamic programming?
+The technique of storing reated computations in memory, rather than recomputing them every inporve runtime. 
+Dynamic programming allows you to use more sapce to take less time.
+
+The following two characteristics are required of all problems that can be otpimized using dynamic programming:
+1. Optimal substructure. 
+2. Overlapping subproblems.
+
+Optimal Substructure:
+Optimal substructure requires that you can solve a problem based on the solutions of subproblems. 
+For example, 
+if you want to calculate the 5th Fibonacci number, it can be solved by
+computing fib(5) = fib(4) + fib(3). 
+
+It is not necessary to know any more information other than the solutions of those two subproblems, in order to get the solution.
+A useful way to think about optimal substructure is whether a problem can be easily solved recursively. 
+Recursive solutions inherently solve a problem by breaking it down into smaller subproblems. 
+If you can solve a problem recursively, it most likely has an optimal substructure.
+
+Overlapping subproblems:
+Overlapping subproblems means that when you split your problem into subproblems, you sometimes get the same subproblem multiple times. 
+With the Fibonacci example, if we want to compute fib(5), we need to compute fib(4) and fib(3). 
+However, to compute fib(4), we need to compute fib(3) again. 
+This is a wasted effort, since we’ve already computed the value of fib(3).
+
+Dynamic programming relies on overlapping subproblems, because it uses memory to save the values that have already been computed to avoid computing them again. 
+The more overlap there is, the more computational time is saved.
+
